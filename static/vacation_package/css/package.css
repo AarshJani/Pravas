@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Port Lligat Sans;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  padding: 0;
+  height: 60px;
+}
+
+a {
+  padding: 0 10px;
+  color: #ff731d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1746a2;
+  text-decoration: underline;
+}
+
+.home-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 30px 0;
+  color: #ff731d;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.links {
+  margin-left: auto;
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: #ff731d;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  right: 0;
+  left: auto;
+  text-align: right;
+  border: none;
+  font-size: 1.5rem;
+  color: #ff731d;
+  width: 100px !important;
+  background: none;
+  margin-top: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.see-button {
+  background: #ff731d;
+  border: none;
+  color: #fff7e9;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.see-button:hover,
+.see-button:focus {
+  background: #fb9250;
+  cursor: pointer;
+  outline: none;
+}
+.package-card {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #1746a2;
+  margin: 20px 0;
+  border-radius: 20px;
+  height: 200px;
+}
+
+.package-image {
+  width: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.package-description {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.package-description > div {
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.package-name {
+  font-size: 1.3rem;
+  flex-basis: 20%;
+}
+
+.package-price {
+  flex-basis: 10%;
+  font-size: 2rem;
+}
+
+.package-overview {
+  flex-basis: 80%;
+  font-size: 0.9rem;
+}
+
+.pacakge-see {
+  flex-basis: 20%;
+}
+
+@media (max-width: 1024px) {
+  .package-card {
+    width: 70%;
+    flex-direction: column;
+    height: auto;
+  }
+  .package-description {
+    width: 100%;
+    flex-direction: column;
+  }
+  .package-image {
+    height: 20%;
+  }
+}
+
+/* //////////package page//////////////// */
+
+.package-detail {
+  width: 70%;
+}
+
+.package-detail > div {
+  margin: 5px 0;
+}
+
+.package-detail > .package-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.package-day > p {
+  margin: 8px 0;
+}
+
+.package-detail > .things {
+  display: flex;
+}
+.package-detail > .things > div {
+  flex-basis: 50%;
+}
+.package-detail > .things > div > .title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.name {
+  flex: 1;
+}
+
+.book-buttion {
+  margin-left: auto;
+}
+
+/* booking form  */
+
+.inner-section {
+  height: 100%;
+}
+
+.form-section {
+  background-color: #fff7e9;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  font-family: Port Lligat Sans;
+  font-size: 1.5rem;
+}
+
+.form-section > form {
+  margin-top: -60px;
+  padding: 10%;
+}
+
+.inputs--filled {
+  background: none;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  height: 2.5rem;
+  margin: 0 0 1.15rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ff731d;
+  box-sizing: border-box;
+  outline: none;
+  color: #0081c9;
+  margin: 10px 0;
+}
+
+input[type="number"]:required,
+input[type="text"]:required,
+input[type="date"]:required {
+  box-shadow: none;
+  outline: none;
+}
+
+.inputs--filled label {
+  transform: translate(0, 0);
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  color: #1746a2;
+}
+
+button {
+  background: #ff731d;
+  border: none;
+  color: #fff7e9;
+  padding: 0.5rem;
+  margin-top: 60px;
+  width: 100%;
+}
+
+button:hover,
+button:focus {
+  background: #fb9250;
+  cursor: pointer;
+  outline: none;
+}
+
+#selected_day {
+  border: none;
+  background-color: transparent;
+  color: #1746a2;
+  outline: none;
+  margin-top: 2em;
+}
+
+#selected_day option {
+  background-color: white;
+  color: #1746a2;
+  border: none;
+}
+
+#selected_day:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
